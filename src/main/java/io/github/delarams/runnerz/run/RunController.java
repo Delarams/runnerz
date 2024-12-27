@@ -39,6 +39,7 @@ public class RunController {
     }
 
     // post
+    @PostMapping("")
     void create(@RequestBody Run run){
         runRepository.create(run);
     }
